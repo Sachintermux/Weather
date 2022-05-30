@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:mapbox="http://schemas.android.com/apk/res-auto"
+    tools:context=".MapActivity">
+    <com.mapbox.mapboxsdk.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        mapbox:mapbox_cameraTargetLat="25.684817"
+        mapbox:mapbox_cameraTargetLng="85.815857"
+        mapbox:mapbox_cameraZoom="9.0"
+        android:layout_above="@id/button"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="get Weather report"
+android:layout_alignParentBottom="true"
+        android:id="@+id/button"
+        android:background="@color/teal_200"
+android:enabled="false"
+        />
+
+</RelativeLayout>
